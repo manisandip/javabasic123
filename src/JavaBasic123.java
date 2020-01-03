@@ -9,7 +9,7 @@ public class JavaBasic123 {
         spchar = spchar.replace("£", "");
         spchar = spchar.replace("@", "");
         String v = "The cost of iphone is £1,250 ";
-        String v1 = v.replaceAll("[0-9]", "");
+       
         int a = 450;
         double a1 = a;
         String b = "125";
@@ -31,20 +31,20 @@ public class JavaBasic123 {
         System.out.println(" String Length is : " + len);//finding the length of the sentence
         System.out.print(" Removing spaces from the sentence  :");
         System.out.println(str.replaceAll("[^a-zA-Z0-9]", ""));//removing spaces from the string
-        System.out.print(" Removing all special characters from the sentence  :");
-        System.out.println(spchar);//removing all special characters
+        System.out.println(" Removing all special characters from the sentence  :" +spchar);//removing all special characters
+        
         System.out.print(" Extracting just numbers  :");
-        System.out.println(v1); //extracting just numbers
-        System.out.print(" Converting integer to double  :");
-        System.out.println(a1);//converting integer to double
-        System.out.print(" Converting string to integer  :");
-        System.out.println(i);//converting string to integer
-        System.out.print(" Converting double to string  :");
-        System.out.println(s);//converting double to string
-        System.out.print(" Converting string to double  :");
-        System.out.println(t);// converting string to double
-        System.out.print(" Converting fraction to decimal  :");
-        System.out.println(c); //1/3 to decimals
+        System.out.println(v.replaceall ("[^0-9]"," ")); //extracting just numbers
+        System.out.print(" Converting integer to double  :"+a1);//converting integer to double
+        
+        System.out.println(" Converting string to integer  :" +i);//converting string to integer
+        
+        System.out.println(" Converting double to string  :" +s);//converting double to string
+        
+        System.out.println(" Converting string to double  :" +t);// converting string to double
+        
+        System.out.println(" Converting fraction to decimal  :" +c);//1/3 to decimals
+        
         System.out.print(" Replacing dollar sign to pound  :");
         System.out.println(price.replaceAll("\\$", "£"));//replacing dollar sign to pounds
         System.out.print(" Middle letter from word there  : ");
